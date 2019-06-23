@@ -6,6 +6,23 @@ main(){
 
 class Header extends  StatelessWidget{
  Widget build(BuildContext context){
-    return MaterialApp(home: Scaffold(appBar: AppBar(title: Text('Bytebroo'),),));
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          
+          backgroundColor: Color.fromARGB(255, 255, 255, 255),
+          centerTitle: true,
+          title: Text('Bytebroo',
+           style: TextStyle(
+             color: Color.fromARGB(255, 30, 144, 255),
+             fontWeight: FontWeight.bold,
+             fontSize: 46.0,
+             
+                    ),
+                  ),
+               ),
+             )
+           );
   }
 }
