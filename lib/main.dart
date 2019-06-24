@@ -21,7 +21,7 @@ class App extends  StatelessWidget{
                   ),
                ),
         body: Container(
-          height: 530,
+          height: 900,
           width: 400,
           child: Column(
             children: <Widget>[
@@ -66,6 +66,31 @@ class App extends  StatelessWidget{
               ),
                 ),
               ),
+        
+           Row(children: <Widget>[
+             Container(
+               width: 110,
+             ),
+             RaisedButton(
+               color: Color.fromARGB(255, 255, 255, 255),
+               child: Center(child: Image.asset(
+               'assets/google.png',
+               height: 60,
+               width: 60,
+                 ),
+               ),)
+             ,
+               Container(
+               width: 20,
+             ),
+             RaisedButton(child: Center(child: Image.asset(
+               'assets/facebook.png',
+               height: 60,
+               width: 60,
+               ),
+               ),)
+             
+           ],)
           ],),
          
             ],
