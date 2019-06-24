@@ -21,23 +21,30 @@ class App extends  StatelessWidget{
                   ),
                ),
         body: Container(
-          height: 30,
+          height: 530,
           width: 400,
-          child: Container(
+          child: Column(
+            children: <Widget>[
+              Container(
           child: Text(
             'Explore the world',
             textAlign: TextAlign.center,
             style: TextStyle(
-              color: Color.fromARGB(255, 255, 255, 255),
+              color: Color.fromARGB(255, 0, 0, 0),
               fontWeight: FontWeight.bold,
               fontSize: 24.0,
-
-             
               ),
             ),
-          decoration: BoxDecoration(
-            color: Color.fromARGB(255, 100, 3, 210)
-            )
+          ),
+          Container(
+            margin: EdgeInsets.all(10),
+            height:200,
+            width: 400,
+            decoration: BoxDecoration(
+             color: Color.fromARGB(255, 50, 3, 210)
+           ),
+          )
+            ],
           )
         ),
              )
